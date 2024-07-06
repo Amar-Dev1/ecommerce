@@ -1,0 +1,99 @@
+
+  .landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+.landing .content {
+    z-index: 99;
+    text-align: center;
+}
+
+.landing .content p {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width:767px) {
+    .landing .content p {
+        font-size: 2rem;
+    }
+}
+
+.landing .content .shop-btn button {
+    padding: 20px 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 20px 0;
+}
+
+.landing .content .shop-btn button:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+#scroll-btn {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    animation: scroll .9s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        color: white;
+    }
+
+    50% {
+        transform: translateY(-5px);
+        color: var(--main-color);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+.landing .content .signup-btns {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.landing .content .signup-btns button {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: .3s;
+}
+.signup-btns .link{
+    text-decoration: none;
+    color: white;
+}
+.landing .content .signup-btns button:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}

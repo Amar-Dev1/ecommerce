@@ -1,0 +1,25 @@
+.about {
+    background-color: #eee;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.about .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.about .content h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    
+}
+.about .content p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}

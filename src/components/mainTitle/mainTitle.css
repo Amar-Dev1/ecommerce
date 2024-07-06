@@ -1,0 +1,19 @@
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.main-title::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}

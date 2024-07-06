@@ -1,0 +1,110 @@
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../../assets/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contact .main-title {
+    color: white;
+}
+
+.contact .main-title::before {
+    background-color: white;
+}
+
+.contact .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.contact form input {
+    font-size: 1.3rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border: 2px solid var(--main-color);
+    outline: none;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.contact form input::placeholder {
+    font-size: 1.2rem;
+}
+
+.contact textarea {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    outline: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact form button {
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+.contact form button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.contact .social-media {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+}
+.contact .social-media a{
+    background-color: var(--secondary-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.contact .social-media .icon {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+@media (max-width:767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+
+    .contact .social-media {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.footer .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .text .santech{
+    color: var(--main-color);
+    font-weight: bold;
+    margin: 0 2px;
+}
